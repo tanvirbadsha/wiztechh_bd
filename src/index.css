@@ -3,7 +3,14 @@
 
 @custom-variant dark (&:is(.dark *));
 @theme {
-  --color-primary: #6c0443;
+  --color-theme: #6c0443;
+}
+/* custom css for theming */
+.rounded-theme {
+  @apply rounded-[100px];
+}
+.custom-theme-color {
+  @apply bg-theme hover:bg-[#6c0442dd] cursor-pointer;
 }
 
 @theme inline {

@@ -1,4 +1,4 @@
-import MainLayout from "../main_layout/MainLayout";
+import MainContentLayout from "../main_layout/MainContentLayout";
 import Sidebar from "../sidebar/Sidebar";
 
 export default function Layout() {
@@ -6,7 +6,7 @@ export default function Layout() {
     <div className="flex w-full gap-4">
       {/* container for main layout */}
       <Sidebar />
-      <MainLayout />
+      <MainContentLayout />
     </div>
   );
 }

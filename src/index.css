@@ -49,12 +49,18 @@
     format("otf");
   font-weight: 600;
 }
+@font-face {
+  font-family: "Helvetica";
+  src: url("/src/assets/fonts/helvetica/HelveticaNeueBold.ttf") format("ttf");
+  font-weight: 600;
+}
 
 @theme {
   --color-theme: #6c0443;
   --font-clash: "clashDisplay", sans-serif;
   --font-silika: "Silika", sans-serif;
   --font-blauerNue: "BlauerNue", sans-serif;
+  --font-helvetica: "Helvetica", sans-serif;
 
   /* ------------------ KEYFRAMES ------------------ */
   @keyframes float {

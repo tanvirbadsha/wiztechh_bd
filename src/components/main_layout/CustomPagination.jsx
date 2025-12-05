@@ -12,7 +12,7 @@ import { useState } from "react";
 export function CustomPagination() {
   const [isActive, setIsActive] = useState(2);
   return (
-    <div className="flex-1">
+    <div className="h-fit">
       <Pagination className="w-full mx-0">
         <PaginationContent className="justify-between w-full">
           <PaginationItem>

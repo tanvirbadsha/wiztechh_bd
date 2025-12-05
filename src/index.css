@@ -2,9 +2,7 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-@theme {
-  --color-theme: #6c0443;
-}
+
 /* custom css for theming */
 .rounded-theme {
   @apply rounded-[100px];
@@ -12,7 +10,52 @@
 .custom-theme-color {
   @apply bg-theme hover:bg-[#6c0442dd] cursor-pointer;
 }
+/* loading custom fonts */
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/src/assets/fonts/clashDisplay/ClashDisplay-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/src/assets/fonts/clashDisplay/ClashDisplay-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/src/assets/fonts/clashDisplay/ClashDisplay-Semibold.woff2")
+    format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/src/assets/fonts/clashDisplay/ClashDisplay-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Silika";
+  src: url("/src/assets/fonts/silika/Silka-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "BlauerNue";
+  src: url("/src/assets/fonts/blauerNue/Blauer-Nue-Medium-iF6626350c78103.otf")
+    format("otf");
+  font-weight: 600;
+}
+
+@theme {
+  --color-theme: #6c0443;
+  --font-clash: "clashDisplay", sans-serif;
+  --font-silika: "Silika", sans-serif;
+  --font-blauerNue: "BlauerNue", sans-serif;
+}
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

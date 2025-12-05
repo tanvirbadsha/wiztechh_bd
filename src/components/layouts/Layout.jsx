@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CourseShowcase from "../main_layout/course_showcase/CourseShowcase";
 import MainContentLayout from "../main_layout/MainContentLayout";
 import MarketingHero from "../main_layout/MarketingHero";
 import Sidebar from "../sidebar/Sidebar";
@@ -24,6 +25,7 @@ export default function Layout() {
       <ShowCaseSection>
         <MarketingHero />
       </ShowCaseSection>
+      <CourseShowcase />
     </>
   );
 }

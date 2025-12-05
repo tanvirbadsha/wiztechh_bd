@@ -8,13 +8,15 @@ export default function EmailInput() {
       />
       <button className="absolute right-1 top-1 bg-gradient-to-r from-[#693FFFFC] to-[#C02EE5] text-white px-6 py-3 rounded-[50px] font-medium hover:opacity-90 transition-opacity">
         <div className="text-center">
-          <p className="text-[14px] md:text-[16px] font-semibold">
+          <p className="font-silika text-[14px] md:text-[16px] font-semibold">
             Start for Free
           </p>
-          <p className="text-[10px] md:text-xs">No Credit Card Required</p>
+          <p className="font-silika text-[10px] md:text-xs">
+            No Credit Card Required
+          </p>
         </div>
       </button>
-      <p className="text-[12px] md:text-sm text-center py-2">
+      <p className="font-silika text-[12px] md:text-sm text-center py-2">
         By proceeding you agree to our Platform terms & Privacy Notice
       </p>
     </div>

@@ -32,6 +32,9 @@ importers:
       react-dom:
         specifier: ^19.2.0
         version: 19.2.1(react@19.2.1)
+      react-fast-marquee:
+        specifier: ^1.6.5
+        version: 1.6.5(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       tailwind-merge:
         specifier: ^3.4.0
         version: 3.4.0
@@ -1259,6 +1262,12 @@ packages:
     peerDependencies:
       react: ^19.2.1
 
+  react-fast-marquee@1.6.5:
+    resolution: {integrity: sha512-swDnPqrT2XISAih0o74zQVE2wQJFMvkx+9VZXYYNSLb/CUcAzU9pNj637Ar2+hyRw6b4tP6xh4GQZip2ZCpQpg==}
+    peerDependencies:
+      react: '>= 16.8.0 || ^18.0.0'
+      react-dom: '>= 16.8.0 || ^18.0.0'
+
   react-refresh@0.18.0:
     resolution: {integrity: sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==}
     engines: {node: '>=0.10.0'}
@@ -2429,6 +2438,11 @@ snapshots:
     dependencies:
       react: 19.2.1
       scheduler: 0.27.0
+
+  react-fast-marquee@1.6.5(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+    dependencies:
+      react: 19.2.1
+      react-dom: 19.2.1(react@19.2.1)
 
   react-refresh@0.18.0: {}
 

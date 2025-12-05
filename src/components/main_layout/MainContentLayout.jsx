@@ -1,11 +1,13 @@
 import { useState } from "react";
+import HouseCardContainer from "../HouseCardContainer";
 import PanelContainer from "../layouts/PanelContainer";
+import { CustomPagination } from "./CustomPagination";
 
 export default function MainContentLayout() {
   const [sortBy, setSortBy] = useState("Low to High");
 
   return (
-    <div className="h-screen flex-1">
+    <div className="h-screen flex-1 flex flex-col gap-6">
       <PanelContainer>
         <p className="text-[20px] px-4 font-semibold">
           Property{" "}
@@ -26,6 +28,8 @@ export default function MainContentLayout() {
           </select>
         </div>
       </PanelContainer>
+      <HouseCardContainer />
+      <CustomPagination />
     </div>
   );
 }

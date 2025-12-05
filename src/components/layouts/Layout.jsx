@@ -3,7 +3,6 @@ import CourseShowcase from "../main_layout/course_showcase/CourseShowcase";
 import MainContentLayout from "../main_layout/MainContentLayout";
 import MarketingHero from "../main_layout/MarketingHero";
 import Sidebar from "../sidebar/Sidebar";
-import ShowCaseSection from "./ShowCaseSection";
 
 export default function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -22,9 +21,9 @@ export default function Layout() {
         />
         <MainContentLayout toggleSidebar={toggleSidebar} />
       </div>
-      <ShowCaseSection>
-        <MarketingHero />
-      </ShowCaseSection>
+
+      <MarketingHero />
+
       <CourseShowcase />
     </>
   );

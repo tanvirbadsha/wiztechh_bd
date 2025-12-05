@@ -3,7 +3,7 @@ import CourseTab from "./CourseTab";
 
 export default function CourseShowcase() {
   return (
-    <div className="flex flex-col justify-center items-center text-center gap-4 pt-4">
+    <div className="flex flex-col justify-center items-center text-center gap-4 pt-4 max-w-full">
       <Badge className={"bg-linear-to-r from-[#FCC3FF] to-[#F75EFF] "}>
         <span className="text-black font-silika text-[16px] font-semibold uppercase">
           Diversify revenue stream

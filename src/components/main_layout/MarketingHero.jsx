@@ -1,9 +1,20 @@
 import { Badge } from "@/components/ui/badge";
 import EmailInput from "./EmailInput";
 import SellStats from "./SellStats";
+import Particles from "./marketing_hero/Particles";
 export default function MarketingHero() {
   return (
-    <div className="bg-[#2A0019] flex flex-col justify-center items-center text-white gap-8 py-[33px] md:py-[66px] px-2 md:px-0">
+    <div className="bg-[#2A0019] flex flex-col justify-center items-center text-white gap-8 py-[33px] md:py-[66px] px-2 md:px-0 relative">
+      <Particles />
+      {/* <!-- Left blur --> */}
+      <div
+        class="absolute left-20 top-30 h-[200px] w-[250px] 
+              rounded-full bg-gradient-to-l from-white to-blue-500 opacity-100 blur-[110px]"
+      ></div>
+      <div
+        class="absolute right-20 top-30 h-[200px] w-[250px] 
+              rounded-full bg-gradient-to-l from-white to-blue-500 opacity-100 blur-[110px]"
+      ></div>
       <Badge className={"bg-[#1B162699] text-white"}>
         <p className="font-semibold text-[16px]">Build For you</p>
       </Badge>

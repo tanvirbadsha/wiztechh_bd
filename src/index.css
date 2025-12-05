@@ -55,6 +55,46 @@
   --font-clash: "clashDisplay", sans-serif;
   --font-silika: "Silika", sans-serif;
   --font-blauerNue: "BlauerNue", sans-serif;
+
+  /* ------------------ KEYFRAMES ------------------ */
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(10px, -10px);
+    }
+    50% {
+      transform: translate(0, -20px);
+    }
+    75% {
+      transform: translate(-10px, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes pulseGlow {
+    0%,
+    100% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  /* ------------------ ANIMATION UTILITIES ------------------ */
+  /* --animate-float: float 6s ease-in-out infinite;
+  --animate-flicker: pulseGlow 4s ease-in-out infinite; */
+}
+/* REGISTER UTILITIES CORRECTLY */
+.animate-float {
+  animation: float var(--float-duration, 6s) ease-in-out infinite;
+}
+.animate-flicker {
+  animation: pulseGlow 4s ease-in-out infinite;
 }
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

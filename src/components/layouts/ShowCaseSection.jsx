@@ -1,3 +1,3 @@
 export default function ShowCaseSection({ children }) {
-  return <div>ShowCaseSection {children}</div>;
+  return <div className="my-[90px]">ShowCaseSection {children}</div>;
 }

@@ -30,7 +30,7 @@ export default function CustomAccordion({ data }) {
   };
 
   return (
-    <div className="space-y-2">
+    <div className="flex flex-col gap-4">
       {Object.entries(data).map(([key, options]) => (
         <div key={key} className="shadow w-full p-2 rounded-[12px] border">
           <button

@@ -16,13 +16,13 @@ export default function CustomerReview({
   return (
     <div className="bg-white px-[24.5px] py-[20.5px] rounded-[32px] flex flex-col md:flex-row gap-[20px] md:gap-[42px] h-full md:ml-10">
       {/* left side */}
-      <div className="w-full md:max-w-[454px]">
+      <div className="w-full md:max-w-[454px] md:flex-1">
         <img src={videoSrc} alt="video thumbnail" className="w-full h-auto" />
       </div>
       {/* right side */}
-      <div className="flex flex-col md:flex-row md:justify-between md:gap-2">
+      <div className="flex flex-col md:flex-row md:justify-between md:gap-2 w-full md:flex-1">
         {/* first element starts */}
-        <div className="flex flex-col md:flex-row gap-2 justify-between">
+        <div className="flex flex-col md:flex-row justify-between md:flex-1">
           {/* left side */}
           <div className="flex flex-col gap-[20px] md:gap-[42px]">
             <div className="flex flex-col gap-[18px]">
@@ -69,7 +69,7 @@ export default function CustomerReview({
             </div>
           </div>
           {/* right side for stars */}
-          <div>
+          <div className="md:pr-10 2xl:pr-0 mt-5 md:mt-0">
             {" "}
             <Stars count={starsCount} />{" "}
           </div>

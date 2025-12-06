@@ -1,4 +1,3 @@
-import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import CustomerReview from "./CustomerReview";
 
@@ -48,9 +47,7 @@ const reviews = [
 ];
 
 export default function ShowCarousel() {
-  const [emblaRef] = useEmblaCarousel({ loop: true, align: "center" }, [
-    Autoplay({ delay: 3000 }),
-  ]);
+  const [emblaRef] = useEmblaCarousel({ loop: true, align: "center" });
 
   return (
     <div className="overflow-hidden w-full mt-10" ref={emblaRef}>

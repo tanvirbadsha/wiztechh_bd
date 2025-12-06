@@ -2,9 +2,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Stars from "./Stars";
 export default function CustomerReview() {
   return (
-    <div className="bg-white px-[24.5px] py-[20.5px] rounded-[32px] flex gap-[42px]">
+    <div className="bg-white px-[24.5px] py-[20.5px] rounded-[32px] flex flex-col md:flex-row gap-[20px] md:gap-[42px]">
       {/* left side */}
-      <div className="max-w-[454px]">
+      <div className="w-full md:max-w-[454px]">
         <img
           src="/assets/customer_review/video.png"
           alt="video thumbnail"
@@ -12,11 +12,11 @@ export default function CustomerReview() {
         />
       </div>
       {/* right side */}
-      <div>
+      <div className="flex flex-col md:flex-row md:justify-between md:gap-2">
         {/* first element starts */}
-        <div className="flex gap-2 justify-between">
+        <div className="flex flex-col md:flex-row gap-2 justify-between">
           {/* left side */}
-          <div className="flex flex-col gap-[42px]">
+          <div className="flex flex-col gap-[20px] md:gap-[42px]">
             <div className="flex flex-col gap-[18px]">
               {/* avatar potion */}
               <div className="flex items-center gap-[13px]">
@@ -38,7 +38,7 @@ export default function CustomerReview() {
                 </div>
               </div>
               {/* button portion */}
-              <div className="flex gap-[19px]">
+              <div className="flex flex-col gap-2 md:flex-row md:gap-[19px]">
                 <button className="border border-[#695F4C] px-[16px] py-[10px] font-silika font-medium text-[16px] rounded-theme">
                   Content Creator
                 </button>
@@ -50,7 +50,7 @@ export default function CustomerReview() {
                 </button>
               </div>
             </div>
-            <p className="font-silika text-[28px] font-normal max-w-[495px] text-start">
+            <p className="font-silika text-[20px] md:text-[28px] font-normal max-w-[495px] text-start">
               I recently had the opportunity to use the platform, and I must
               say, the feature that allows you to set your own commission is a
               game changer!

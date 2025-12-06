@@ -6,9 +6,9 @@ export default function CheckboxGroup({
 }) {
   return (
     <div className="space-y-2">
-      {options.map((option) => (
+      {options.map((option, index) => (
         <label
-          key={option}
+          key={`${category}-${index}`}
           className="flex items-center space-x-2 cursor-pointer"
         >
           <input

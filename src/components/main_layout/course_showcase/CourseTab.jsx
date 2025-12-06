@@ -88,7 +88,7 @@ export default function CourseTab() {
           {/* overflowing */}
           <img
             src="/assets/show_courses/message.svg"
-            class="absolute bottom-14 right-[-10px]"
+            className="absolute bottom-14 right-[-10px]"
           />
         </div>
       </div>

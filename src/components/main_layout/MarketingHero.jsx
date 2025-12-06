@@ -10,11 +10,11 @@ export default function MarketingHero() {
         <Particles />
         {/* <!-- Left blur --> */}
         <div
-          class="absolute left-20 top-30 h-[200px] w-[250px] 
+          className="absolute left-20 top-30 h-[200px] w-[250px] 
               rounded-full bg-gradient-to-l from-white to-blue-500 opacity-100 blur-[110px]"
         ></div>
         <div
-          class="absolute right-20 top-30 h-[200px] w-[250px] 
+          className="absolute right-20 top-30 h-[200px] w-[250px] 
               rounded-full bg-gradient-to-l from-white to-blue-500 opacity-100 blur-[110px]"
         ></div>
         <Badge className={"bg-[#1B162699] text-white"}>

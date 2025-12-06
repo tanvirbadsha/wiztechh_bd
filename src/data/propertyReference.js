@@ -12,5 +12,5 @@ export const propertyCategoryData = {
     "Villa",
     "Acreage",
   ],
-  amenities: ["Per-friendly", "Parking", "Private Pool", "Private Pool"],
+  amenities: ["Pet-friendly", "Parking", "Private Pool"],
 };

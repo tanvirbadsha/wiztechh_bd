@@ -1,5 +1,6 @@
 import { Heart, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -9,6 +10,7 @@ import {
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -56,7 +58,10 @@ export default function Header() {
             <span className="text-sm font-medium">Favourite</span>
           </div>
 
-          <button className="px-4 py-2 text-white rounded-theme  transition-colors custom-theme-color">
+          <button
+            onClick={() => navigate("/login")}
+            className="px-4 py-2 text-white rounded-theme  transition-colors custom-theme-color"
+          >
             Login Now
           </button>
         </div>
@@ -110,7 +115,10 @@ export default function Header() {
                 <Heart className="h-6 w-6 text-gray-600" />
                 <span className="text-sm font-medium">Favourite</span>
               </div>
-              <button className="w-full px-4 py-2 text-white rounded-theme transition-colors custom-theme-color">
+              <button
+                onClick={() => navigate("/login")}
+                className="w-full px-4 py-2 text-white rounded-theme transition-colors custom-theme-color"
+              >
                 Login Now
               </button>
             </div>

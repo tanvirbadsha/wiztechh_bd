@@ -13,6 +13,11 @@ export const houseCardData = [
       area_sqft: 2500,
     },
     image_url: "/assets/cards/maple.png ",
+    images: [
+      "/assets/cards/maple.png ",
+      "/assets/cards/maple.png ",
+      "/assets/cards/maple.png ",
+    ],
   },
   {
     id: "B112",
@@ -28,6 +33,7 @@ export const houseCardData = [
       area_sqft: 6500,
     },
     image_url: "/assets/cards/sunset.png ",
+    images: ["/assets/cards/sunset.png ", "/assets/cards/sunset.png ", "/assets/cards/sunset.png "],
   },
   {
     id: "C705",
@@ -43,6 +49,7 @@ export const houseCardData = [
       area_sqft: 3500,
     },
     image_url: "/assets/cards/riverside.png ",
+    images: ["/assets/cards/riverside.png ", "/assets/cards/riverside.png ", "/assets/cards/riverside.png "],
   },
   {
     id: "D900",
@@ -58,6 +65,7 @@ export const houseCardData = [
       area_sqft: 4500,
     },
     image_url: "/assets/cards/golden.png ",
+    images: ["/assets/cards/golden.png ", "/assets/cards/golden.png ", "/assets/cards/golden.png "],
   },
   {
     id: "D1200",
@@ -73,6 +81,7 @@ export const houseCardData = [
       area_sqft: 9500,
     },
     image_url: "/assets/cards/ocean.png ",
+    images: ["/assets/cards/ocean.png ", "/assets/cards/ocean.png ", "/assets/cards/ocean.png "],
   },
   {
     id: "D1300",
@@ -88,5 +97,6 @@ export const houseCardData = [
       area_sqft: 5500,
     },
     image_url: "/assets/cards/urban.png ",
+    images: ["/assets/cards/urban.png ", "/assets/cards/urban.png ", "/assets/cards/urban.png "],
   },
 ];

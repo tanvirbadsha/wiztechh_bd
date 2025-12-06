@@ -1,8 +1,11 @@
 import { Bath, Bed, MoveUpLeft } from "lucide-react";
 
-export default function HouseCard({ property }) {
+export default function HouseCard({ property, onClick }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+    <div
+      className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+      onClick={onClick}
+    >
       <img
         src={property.image_url}
         alt={property.title}

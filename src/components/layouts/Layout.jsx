@@ -3,6 +3,7 @@ import CourseShowcase from "../main_layout/course_showcase/CourseShowcase";
 import MainContentLayout from "../main_layout/MainContentLayout";
 import MarketingHero from "../main_layout/MarketingHero";
 import Sidebar from "../sidebar/Sidebar";
+import EssetialToolsContainer from "./EssetialToolsContainer";
 import ShowCustomerReview from "./ShowCustomerReview";
 
 export default function Layout() {
@@ -27,6 +28,7 @@ export default function Layout() {
 
       <CourseShowcase />
       <ShowCustomerReview />
+      <EssetialToolsContainer />
     </>
   );
 }

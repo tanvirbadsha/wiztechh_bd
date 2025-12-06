@@ -14,7 +14,7 @@ export default function CustomerReview({
   starsCount = 5,
 }) {
   return (
-    <div className="bg-white px-[24.5px] py-[20.5px] rounded-[32px] flex flex-col md:flex-row gap-[20px] md:gap-[42px]">
+    <div className="bg-white px-[24.5px] py-[20.5px] rounded-[32px] flex flex-col md:flex-row gap-[20px] md:gap-[42px] h-full md:ml-10">
       {/* left side */}
       <div className="w-full md:max-w-[454px]">
         <img src={videoSrc} alt="video thumbnail" className="w-full h-auto" />

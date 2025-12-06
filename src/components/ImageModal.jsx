@@ -8,7 +8,7 @@ export default function ImageModal({ isOpen, images, onClose }) {
   return (
     <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50 ">
       {/* Modal */}
-      <div className="relative bg-white rounded-[30px] p-4 md:p-6 w-full max-w-[90vw] md:max-w-4xl lg:max-w-5xl h-[80vh]">
+      <div className="relative bg-white rounded-[30px] p-4 md:p-6 w-full max-w-[90vw] md:max-w-4xl lg:max-w-5xl md:h-[80vh]">
         {/* Close button */}
         <button
           onClick={onClose}

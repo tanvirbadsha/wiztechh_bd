@@ -64,7 +64,7 @@ export default function EssentialCardsContainer() {
 
   return (
     <motion.div
-      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 pb-[38px]"
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }} // animate when 20% in view

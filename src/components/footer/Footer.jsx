@@ -17,7 +17,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className=" bg-[#251621] text-white w-full text-center">
+    <div className=" bg-[#251621] text-white w-full text-center rounded-tl-[40px] rounded-tr-[40px]">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 text-white pt-[70px]">
         <ul className="text-center md:text-left">
           {menuItems.map((item, index) => (
@@ -50,7 +50,7 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <div className="space-y-3">
+        <div className="space-y-3 ">
           <h1 className="text-[20px] md:text-[28px] text-[#EEEBED]">
             Follow Us
           </h1>

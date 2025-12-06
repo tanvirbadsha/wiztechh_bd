@@ -10,7 +10,7 @@ export default function Sidebar({ className, onClose }) {
   return (
     <div
       className={cn(
-        "h-screen w-[339px] shrink-0 flex flex-col gap-4 overflow-y-auto",
+        "h-screen w-[339px] shrink-0 flex flex-col gap-4 overflow-y-auto mb-[43px]",
         className
       )}
     >
@@ -24,7 +24,7 @@ export default function Sidebar({ className, onClose }) {
         <Button
           variant="outline"
           size="sm"
-          className="px-4 py-[17.5px] cursor-pointer bg-[#F4F6F8]"
+          className="px-4 py-6 cursor-pointer bg-[#F4F6F8]"
         >
           Reset Filter <TimerReset />
         </Button>
